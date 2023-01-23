@@ -1,0 +1,28 @@
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  top: -150px;
+
+  
+}
+.content button {
+  border: 1px solid lightgray;
+  background-color: transparent;
+  color: white;
+}
+.main {
+  margin-top: 30px;
+  width: 100%;
+  height: 55%;
+}
+
+video {
+  width: 100%;
+  
+  object-fit: cover;
+}
