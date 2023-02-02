@@ -9,7 +9,7 @@ function ToastMessage({ bg, title, body }) {
             <Toast bg={bg} onClose={() => setShow(false)} show={show} delay={3000} autohide>
                 <Toast.Header>
                     <strong className="me-auto">{title}</strong>
-                    <small>now</small>
+                    <small>сейчас</small>
                 </Toast.Header>
                 <Toast.Body>{body}</Toast.Body>
             </Toast>

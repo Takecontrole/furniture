@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { LinkContainer } from "react-router-bootstrap";
 import { logout, resetNotifications } from "../features/userSlice";
 import "./Navigation.css";
-import logo from "./chrome_image_21 янв. 2023 г. 10_25_51 GMT+04_00.png"
+import logo from "./videos/chrome_image_21 янв. 2023 г. 10_25_51 GMT+04_00.png"
 function Navigation() {
     const user = useSelector((state) => state.user);
     const dispatch = useDispatch();
@@ -39,8 +39,8 @@ function Navigation() {
                     
                     </div>
                 </LinkContainer>
-                <Navbar.Toggle style={{ color: "black" }} aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
+                <Navbar.Toggle style={{ color: "black",  fontSize:"12px", marginBottom:"10px"}}  aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse  id="basic-navbar-nav">
                     <Nav className="ms-auto">
                         {/* if no user */}
                         {!user && (
@@ -96,6 +96,132 @@ function Navigation() {
                                 </NavDropdown>
                             </>
                         )}
+                        
+                         <NavDropdown title="Гостиная" id="basic-nav-dropdown">
+                         
+                       <LinkContainer to="/part/гостиная">
+                          <NavDropdown.Item>Увидеть всё</NavDropdown.Item>
+                         </LinkContainer>
+                         
+                       <LinkContainer to="/category/диваны для гостиной">
+                          <NavDropdown.Item>Диваны</NavDropdown.Item>
+                         </LinkContainer>
+                         
+                         <LinkContainer to="/category/столы для гостиной">
+                          <NavDropdown.Item>Столики</NavDropdown.Item>
+                         </LinkContainer>
+                         
+                         <LinkContainer to="/category/кресла для гостиной">
+                          <NavDropdown.Item>Кресла</NavDropdown.Item>
+                         </LinkContainer>
+                         
+                         <LinkContainer to="/category/пуфы">
+                          <NavDropdown.Item >Пуфы</NavDropdown.Item>
+                         </LinkContainer>
+                         
+                       </NavDropdown>
+                         <NavDropdown title="Кухня" id="basic-nav-dropdown">
+                         
+                       <LinkContainer to="/part/кухня">
+                          <NavDropdown.Item>Увидеть весь раздел</NavDropdown.Item>
+                         </LinkContainer>
+                         
+                       <LinkContainer to="/category/кухонные столы">
+                          <NavDropdown.Item>Кухонные столы</NavDropdown.Item>
+                         </LinkContainer>
+                         
+                         <LinkContainer to="/category/кухонные кресла">
+                          <NavDropdown.Item>Кухонные кресла</NavDropdown.Item>
+                         </LinkContainer>
+                         
+                         <LinkContainer to="/category/барные стулья">
+                          <NavDropdown.Item>Барные стулья</NavDropdown.Item>
+                         </LinkContainer>
+                         
+                         <LinkContainer to="/category/украшения">
+                          <NavDropdown.Item >Украшения</NavDropdown.Item>
+                         </LinkContainer>
+                         
+                       </NavDropdown>
+                       
+                     
+                         <NavDropdown title="Декор" id="basic-nav-dropdown">
+                         
+                       <LinkContainer to="/part/декор">
+                          <NavDropdown.Item>Увидеть весь раздел</NavDropdown.Item>
+                         </LinkContainer>
+                         
+                       <LinkContainer to="/category/домашний декор">
+                          <NavDropdown.Item>Домашний декор</NavDropdown.Item>
+                         </LinkContainer>
+                         
+                         <LinkContainer to="/category/подушки & покрывала">
+                          <NavDropdown.Item>Подушки & покрывала</NavDropdown.Item>
+                         </LinkContainer>
+                         
+                         <LinkContainer to="/category/коврики">
+                          <NavDropdown.Item>коврики</NavDropdown.Item>
+                         </LinkContainer>
+                         
+                         <LinkContainer to="/category/освещение">
+                          <NavDropdown.Item >Освещение</NavDropdown.Item>
+                         </LinkContainer>
+                         
+                         <LinkContainer to="/category/зеркала">
+                          <NavDropdown.Item >Зеркала</NavDropdown.Item>
+                         </LinkContainer>
+                         
+                       </NavDropdown>
+                       
+                         <NavDropdown title="Столовая на свежем воздухе" id="basic-nav-dropdown">
+                         
+                       <LinkContainer to="/part/столовая на свежем воздухе">
+                          <NavDropdown.Item>Увидеть весь раздел</NavDropdown.Item>
+                         </LinkContainer>
+                         
+                       <LinkContainer to="/category/столы для дворика">
+                          <NavDropdown.Item>Столы для дворика</NavDropdown.Item>
+                         </LinkContainer>
+                         
+                         <LinkContainer to="/category/кресла для дворика">
+                          <NavDropdown.Item>Кресла для дворика</NavDropdown.Item>
+                         </LinkContainer>
+                         
+
+                       </NavDropdown>
+                       
+                         <NavDropdown title="Мебель для отдыха" id="basic-nav-dropdown">
+                         
+                           <LinkContainer to="/part/мебель для отдыха">
+                          <NavDropdown.Item>Увидеть весь раздел</NavDropdown.Item>
+                          </LinkContainer>
+                       <LinkContainer to="/category/сидения для отдыха">
+                          <NavDropdown.Item>сидения для отдыха</NavDropdown.Item>
+                         </LinkContainer>
+                       </NavDropdown>
+
+                    
+                           <NavDropdown title="Аксессуары для дворика" id="basic-nav-dropdown">
+                             <LinkContainer to="/part/аксессуары для дворика">
+                          <NavDropdown.Item>Увидеть весь раздел</NavDropdown.Item>
+                          </LinkContainer>
+                         <LinkContainer to="/category/костровые ямы">
+                          <NavDropdown.Item>Костровые ямы</NavDropdown.Item>
+                         </LinkContainer>
+                         
+                         <LinkContainer to="/category/лампы & фонари">
+                          <NavDropdown.Item>Лампы & фонари</NavDropdown.Item>
+                         </LinkContainer>
+                         
+                         <LinkContainer to="/category/половики">
+                          <NavDropdown.Item >Половики</NavDropdown.Item>
+                         </LinkContainer>
+                         
+                         <LinkContainer to="/category/горшки">
+                          <NavDropdown.Item >Горшки</NavDropdown.Item>
+                         </LinkContainer>
+                         
+                       </NavDropdown>                       
                     </Nav>
                 </Navbar.Collapse>
             </Container>

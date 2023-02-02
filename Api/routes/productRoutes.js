@@ -17,8 +17,8 @@ router.get('/', async(req, res)=> {
 //create product
 router.post('/', async(req, res)=> {
   try {
-    const {name, description, price, part, category, images: pictures} = req.body;
-    const product = await Product.create({name, description, price, part, category, pictures});
+    const {name, description, price, part, collect, category, images: pictures} = req.body;
+    const product = await Product.create({name, description, price, part, collect, category, pictures});
     const products = await Product.find();
     res.status(201).json(products);
   } catch (e) {
@@ -32,8 +32,8 @@ router.post('/', async(req, res)=> {
 router.patch('/:id', async(req, res)=> {
   const {id} = req.params;
   try {
-    const {name, description, price, part, category, images: pictures} = req.body;
-    const product = await Product.findByIdAndUpdate(id, {name, description, price, part, category, pictures});
+    const {name, description, price, part, collect, category, images: pictures} = req.body;
+    const product = await Product.findByIdAndUpdate(id, {name, description, price, part, collect, category, pictures});
     const products = await Product.find();
     res.status(200).json(products);
   } catch (e) {
@@ -95,6 +95,21 @@ router.get('/part/:part', async(req,res)=> {
       products = await Product.find().sort(sort);
     } else {
       products = await Product.find({part}).sort(sort)
+    }
+    res.status(200).json(products)
+  } catch (e) {
+    res.status(400).send(e.message);
+  }
+})
+router.get('/collect/:collect', async(req,res)=> {
+  const {collect} = req.params;
+  try {
+    let products;
+    const sort = {'_id': -1}
+    if(collect == "all"){
+      products = await Product.find().sort(sort);
+    } else {
+      products = await Product.find({collect}).sort(sort)
     }
     res.status(200).json(products)
   } catch (e) {

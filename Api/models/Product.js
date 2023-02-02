@@ -20,6 +20,10 @@ const ProductSchema = mongoose.Schema({
     type: String,
     required: [true, "can't be blank"]
   },
+  collect: {
+    type: String
+  },
+  
   pictures: {
     type: Array,
     required: true

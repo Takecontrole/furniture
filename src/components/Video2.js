@@ -5,11 +5,11 @@ import { LinkContainer } from "react-router-bootstrap";
 
 const Video = () => {
   return (
-    <LinkContainer to="/category/ручная работа">
+    <LinkContainer to="/collect/ручная работа">
 <div className='main'>
         <video src={videoBg} autoPlay loop muted />
         <div className="content">
-            <h1>Ручная работа</h1>
+            <h1 className="first">Ручная работа</h1>
             <p>Сделанная с любовью к своему делу.</p>
             <button>Перейти к коллекции</button>
         </div>

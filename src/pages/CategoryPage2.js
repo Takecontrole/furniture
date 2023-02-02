@@ -8,7 +8,7 @@ import "./CategoryPage.css";
 import Pagination from "../components/Pagination";
 
 
-function CategoryPage() {
+function CategoryPage2() {
     const { part } = useParams();
     const [loading, setLoading] = useState(false);
     const [products, setProducts] = useState([]);
@@ -34,8 +34,8 @@ function CategoryPage() {
 
     const productsSearch = products.filter((product) => product.name.toLowerCase().includes(searchTerm.toLowerCase()));
 
-    function ProductSearch({ _id, part, category, name, pictures }) {
-        return <ProductPreview _id={_id} part={part} category={category} name={name} pictures={pictures} />;
+    function ProductSearch({ _id, part, category, collect, name, pictures }) {
+        return <ProductPreview _id={_id} part={part} category={category} collect={collect} name={name} pictures={pictures} />;
     }
 
     return (
@@ -61,4 +61,4 @@ function CategoryPage() {
     );
 }
 
-export default CategoryPage;
+export default CategoryPage2;

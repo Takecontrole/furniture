@@ -29,7 +29,7 @@ function OrdersPage() {
     }
 
     if (orders.length === 0) {
-        return <h1 className="text-center pt-3">No orders yet</h1>;
+        return <h1 className="text-center pt-3">История пуста</h1>;
     }
 
     return (
@@ -39,9 +39,9 @@ function OrdersPage() {
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>Status</th>
-                        <th>Date</th>
-                        <th>Total</th>
+                        <th>Статус</th>
+                        <th>Дата</th>
+                        <th>Итог</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -55,7 +55,7 @@ function OrdersPage() {
                             </td>
                             <td>{order.date}</td>
 
-                            <td>${order.total}</td>
+                            <td>{order.total}</td>
                         </tr>
                     ))}
                 </tbody>

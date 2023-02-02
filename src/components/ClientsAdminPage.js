@@ -21,14 +21,14 @@ function ClientsAdminPage() {
     }, []);
 
     if (loading) return <Loading />;
-    if (users?.length == 0) return <h2 className="py-2 text-center">No users yet</h2>;
+    if (users?.length == 0) return <h2 className="py-2 text-center">Пока что нет пользователей</h2>;
 
     return (
         <Table responsive striped bordered hover>
             <thead>
                 <tr>
-                    <th>Client Id</th>
-                    <th>Client Name</th>
+                    <th>Id клиента</th>
+                    <th>Имя клиента</th>
                     <th>Email</th>
                 </tr>
             </thead>

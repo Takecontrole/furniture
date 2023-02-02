@@ -54,8 +54,8 @@ function CheckoutForm() {
                     {alertMessage && <Alert>{alertMessage}</Alert>}
                     <Col md={6}>
                         <Form.Group className="mb-3">
-                            <Form.Label>First Name</Form.Label>
-                            <Form.Control type="text" placeholder="First Name" value={user.name} disabled />
+                            <Form.Label>Имя</Form.Label>
+                            <Form.Control type="text" placeholder="" value={user.name} disabled />
                         </Form.Group>
                     </Col>
                     <Col md={6}>
@@ -68,21 +68,21 @@ function CheckoutForm() {
                 <Row>
                     <Col md={7}>
                         <Form.Group className="mb-3">
-                            <Form.Label>Address</Form.Label>
-                            <Form.Control type="text" placeholder="Address" value={address} onChange={(e) => setAddress(e.target.value)} required />
+                            <Form.Label>Адресс доставки</Form.Label>
+                            <Form.Control type="text" placeholder="куда везти?" value={address} onChange={(e) => setAddress(e.target.value)} required />
                         </Form.Group>
                     </Col>
                     <Col md={5}>
                         <Form.Group className="mb-3">
-                            <Form.Label>Country</Form.Label>
-                            <Form.Control type="text" placeholder="Country" value={country} onChange={(e) => setCountry(e.target.value)} required />
+                            <Form.Label>Город</Form.Label>
+                            <Form.Control type="text" placeholder="Город" value={country} onChange={(e) => setCountry(e.target.value)} required />
                         </Form.Group>
                     </Col>
                 </Row>
-                <label htmlFor="card-element">Card</label>
+                <label htmlFor="card-element">Карта</label>
                 <CardElement id="card-element" />
                 <Button className="mt-3" type="submit" disabled={user.cart.count <= 0 || paying || isSuccess}>
-                    {paying ? "Processing..." : "Pay"}
+                    {paying ? "Обрабатывается..." : "Оплата"}
                 </Button>
             </Form>
         </Col>

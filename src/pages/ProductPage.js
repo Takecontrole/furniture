@@ -31,9 +31,9 @@ function ProductPage() {
         return <Loading />;
     }
     const responsive = {
-        0: { items: 1 },
-        568: { items: 2 },
-        1024: { items: 3 },
+        0: { items: 2 },
+        568: { items: 3 },
+        1024: { items: 5 },
     };
 
     const images = product.pictures.map((picture) => <img className="product__carousel--image" src={picture.url} onDragStart={handleDragStart} />);
@@ -51,16 +51,19 @@ function ProductPage() {
         <Container className="pt-4" style={{ position: "relative" }}>
             <Row>
                 <Col lg={6}>
-                    <AliceCarousel mouseTracking items={images} controlsStrategy="alternate" />
+                    <AliceCarousel mouseTracking items={images}
+                      infinite 
+                     controlsStrategy="alternate" />
                 </Col>
                 <Col lg={6} className="pt-4">
                     <h1>{product.name}</h1>
                     <p>
-                        <Badge bg="primary">{product.category}</Badge>
+                    {product.category}
+                        
                     </p>
-                    <p className="product__price">${product.price}</p>
+                    <p className="product__price">{product.price}</p>
                     <p style={{ textAlign: "justify" }} className="py-3">
-                        <strong>Description:</strong> {product.description}
+                        <strong>Описание:</strong> {product.description}
                     </p>
                     {user && !user.isAdmin && (
                         <ButtonGroup style={{ width: "90%" }}>
@@ -71,23 +74,25 @@ function ProductPage() {
                                 <option value="4">4</option>
                                 <option value="5">5</option>
                             </Form.Select>
-                           <Button size="lg" onClick={() => addToCart({ userId: user._id, productId: id, price: product.price, image: product.pictures[0].url })}>
-                                Add to cart
+                           <Button className="addButton" size="md" onClick={() => addToCart({ userId: user._id, productId: id, price: product.price, image: product.pictures[0].url })}>
+                                Добавить в корзину
                             </Button> 
                         </ButtonGroup>
                     )}
                     {user && user.isAdmin && (
                         <LinkContainer to={`/product/${product._id}/edit`}>
-                            <Button size="lg">Edit Product</Button>
+                            <Button size="lg">Редактировать</Button>
                         </LinkContainer>
                     )}
-                  {isSuccess && <ToastMessage bg="info" title="Added to cart" body={`${product.name} is in your cart`} />} 
+                  {isSuccess && <ToastMessage bg="info" title="Добавлено" body={`${product.name} в корзине`} />} 
                 </Col>
             </Row>
             <div className="my-4">
-                <h2>Similar Products</h2>
+                <h2>Вам может так-же понравиться</h2>
                 <div className="d-flex justify-content-center align-items-center flex-wrap">
-                    <AliceCarousel mouseTracking items={similarProducts} responsive={responsive} controlsStrategy="alternate" />
+                    <AliceCarousel mouseTracking
+                    infinite
+                    items={similarProducts} responsive={responsive} controlsStrategy="alternate" />
                 </div>
             </div>
         </Container>

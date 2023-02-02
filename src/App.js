@@ -10,7 +10,8 @@ import { useDispatch, useSelector } from "react-redux";
 import NewProduct from "./pages/NewProduct";
 import ProductPage from "./pages/ProductPage";
 import CategoryPage from "./pages/CategoryPage";
-import CategoryPage2 from "./pages/CategoryPage2";
+import PartPage from "./pages/PartPage";
+import CollectPage from "./pages/CollectPage";
 import ScrollToTop from "./components/ScrollToTop";
 import CartPage from "./pages/CartPage";
 import OrdersPage from "./pages/OrdersPage";
@@ -20,6 +21,7 @@ import Announcement from "./components/Announcement";
 import { useEffect } from "react";
 import { io } from "socket.io-client";
 import { addNotification } from "./features/userSlice";
+
 
 function App() {
   const user = useSelector((state) => state.user);
@@ -67,7 +69,9 @@ function App() {
                     )}
                     <Route path="/product/:id" element={<ProductPage />} />
                   <Route path="/category/:category" element={<CategoryPage />} />
-                  <Route path="/part/:part" element={<CategoryPage2 />} />
+                  <Route path="/collect/:collect" element={<CollectPage />} />
+                  <Route path="/part/:part" element={<PartPage />} />
+                 
                     <Route path="/new-product" element={<NewProduct />} />
 
 

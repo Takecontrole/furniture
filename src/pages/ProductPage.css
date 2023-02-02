@@ -8,3 +8,6 @@
 .alice-carousel__next-btn {
     display: none !important;
 }
+.addButton {
+  background-color: black;
+}

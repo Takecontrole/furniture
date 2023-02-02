@@ -52,7 +52,7 @@ function OrdersAdminPage() {
     }
 
     if (orders.length === 0) {
-        return <h1 className="text-center pt-4">No orders yet</h1>;
+        return <h1 className="text-center pt-4">Сейчас нет заказов</h1>;
     }
 
     function TableRow({ _id, count, owner, total, status, products, address }) {
@@ -66,15 +66,15 @@ function OrdersAdminPage() {
                 <td>
                     {status === "processing" ? (
                         <Button size="sm" onClick={() => markShipped(_id, owner?._id)}>
-                            Mark as shipped
+                            Отметить как доставленно
                         </Button>
                     ) : (
-                        <Badge bg="success">Shipped</Badge>
+                        <Badge bg="success">Доставлено</Badge>
                     )}
                 </td>
                 <td>
                     <span style={{ cursor: "pointer" }} onClick={() => showOrder(products)}>
-                        View order <i className="fa fa-eye"></i>
+                        Посмотреть заказ <i className="fa fa-eye"></i>
                     </span>
                 </td>
             </tr>
@@ -87,10 +87,10 @@ function OrdersAdminPage() {
                 <thead>
                     <tr>
                         <th>#</th>
-                        <th>Client Name</th>
-                        <th>Items</th>
-                        <th>Order Total</th>
-                        <th>Address</th>
+                        <th>Имя клиента</th>
+                        <th>Данные</th>
+                        <th>Итог</th>
+                        <th>Адресс</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -100,7 +100,7 @@ function OrdersAdminPage() {
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Order details</Modal.Title>
+                    <Modal.Title>Детали</Modal.Title>
                 </Modal.Header>
                 {orderToShow.map((order) => (
                     <div className="order-details__container d-flex justify-content-around py-2">
@@ -108,12 +108,12 @@ function OrdersAdminPage() {
                         <p>
                             <span>{order.count} x </span> {order.name}
                         </p>
-                        <p>Price: ${Number(order.price) * order.count}</p>
+                        <p>Цена{Number(order.price) * order.count}</p>
                     </div>
                 ))}
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
-                        Close
+                        Закрыть
                     </Button>
                 </Modal.Footer>
             </Modal>

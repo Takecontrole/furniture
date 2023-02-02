@@ -13,7 +13,7 @@ function DashboardProducts() {
     const [deletProduct, { isLoading, isSuccess }] = useDeleteProductMutation();
     function handleDeleteProduct(id) {
         // logic here
-        if (window.confirm("Are you sure?")) deletProduct({ product_id: id, user_id: user._id });
+        if (window.confirm("Точно?")) deletProduct({ product_id: id, user_id: user._id });
     }
 
     function TableRow({ pictures, _id, name, price }) {
@@ -27,10 +27,10 @@ function DashboardProducts() {
                 <td>{price}</td>
                 <td>
                     <Button onClick={() => handleDeleteProduct(_id, user._id)} disabled={isLoading}>
-                        Delete
+                        Удалить
                     </Button>
                     <Link to={`/product/${_id}/edit`} className="btn btn-warning">
-                        Edit
+                        Редакт.
                     </Link>
                 </td>
             </tr>
@@ -42,9 +42,9 @@ function DashboardProducts() {
             <thead>
                 <tr>
                     <th></th>
-                    <th>Product ID</th>
-                    <th>Product Name</th>
-                    <th>Product Price</th>
+                    <th>Товар ID</th>
+                    <th>Название</th>
+                    <th>Цена</th>
                 </tr>
             </thead>
             <tbody>
