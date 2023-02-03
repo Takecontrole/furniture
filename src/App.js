@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
@@ -43,7 +43,7 @@ function App() {
     }, []);
   return (
         <div className="App">
-            <BrowserRouter>
+            <HashRouter>
                 <ScrollToTop />
                 <Announcement/>
                 <Navigation />
@@ -77,7 +77,7 @@ function App() {
 
                   
                 </Routes>
-            </BrowserRouter>
+            </HashRouter>
         </div>
     );
 }
