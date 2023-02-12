@@ -22,7 +22,7 @@ const Gallery2 = () => {
 const handleDragStart = (e) => e.preventDefault();
 const responsive = {
     0: { items: 2},
-    568: { items: 4 },
+    568: { items: 3 },
     1024: { items: 5},
 };
     let similarProducts = [];

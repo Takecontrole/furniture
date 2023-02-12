@@ -1,0 +1,78 @@
+
+.center .footer-content .fas{
+
+  font-size: 1.4375rem;
+
+  background: transparent;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .footer-content .fas:hover{
+  background: #f12020;
+}
+.center .footer-content .text{
+  font-size: 1.0625rem;
+  font-weight: 200;
+  padding-left: 10px;
+  
+}
+.center .footer-content .phone{
+  margin: 15px 0;
+}
+
+.right form .text{
+
+  font-size: 1.0625rem;
+
+  margin-bottom: 2px;
+  color: white;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+.right form input:focus,
+.right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 30px;
+  width: 150px;
+  border: none;
+  outline: none;
+  background-image: linear-gradient(135deg, #12c2e9, #c471ed, #f64f59 );
+  font-size: 1.0625rem;
+  font-weight: 200;
+  cursor: pointer;
+  transition: .3s;
+  border-radius: 10px;
+}
+.right form .btn button:hover{
+  background: #000;
+  color:white;
+  border: 1px solid white;
+}
+.social span {
+  padding:10px;
+ color: white;
+}
+.social :hover{
+  color: red;
+}

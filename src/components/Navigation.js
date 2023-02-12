@@ -104,7 +104,12 @@ function Navigation() {
                          </LinkContainer>
                          
                        <LinkContainer to="/category/диваны для гостиной">
-                          <NavDropdown.Item>Диваны</NavDropdown.Item>
+                          <NavDropdown.Item><p className="testnavbar">Диваны
+                       <div className="image-box">
+                        <img className="cat-img" src="../images/category/диваны для гостиной.png"/> 
+                        </div>
+                        </p>
+                          </NavDropdown.Item>
                          </LinkContainer>
                          
                          <LinkContainer to="/category/столы для гостиной">

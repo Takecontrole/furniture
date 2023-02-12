@@ -3,18 +3,27 @@ import { Button, Col, Container, Form, Row, Alert } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { useLoginMutation } from "../services/appApi";
 import { LinkContainer } from "react-router-bootstrap";
+import { useNavigate } from "react-router-dom";
 function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [login, { isError, isLoading, error }] = useLoginMutation();
+    const navigate = useNavigate();
     function handleLogin(e) {
         e.preventDefault();
-        login({ email, password });
+        login({ email, password }).then(() => {
+            if (isError) {
+                setTimeout(() => {
+                    navigate("/");
+                }, 1500);
+            }
+        });
     }
     return (
-        <Container>
+      <div style={{width:"100%"}}>
+        <Container >
             <Row>
-                <Col md={6} className="login__form--container">
+                <Col md={12} className="login__form--container">
                     <Form style={{ width: "100%" }} onSubmit={handleLogin}>
                         <h1>Авторизация</h1>
                         {isError && <Alert variant="danger">{error.data}</Alert>}
@@ -38,9 +47,10 @@ function Login() {
                         </p>
                     </Form>
                 </Col>
-                <Col md={6} className="login__image--container"></Col>
+               
             </Row>
         </Container>
+        </div>
     );
 }
 

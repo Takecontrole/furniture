@@ -17,9 +17,9 @@ const Modal = ({ open, onClose }) => {
             X
           </p>
           <div className='modalcontent'>
-            <p>Зарегистрируйтесь и получите</p>
-            <h1>Скидку 2000р</h1>
-            <p>на первую покупку</p>
+            <h1>Присоединись к нам</h1>
+            <p>и наслаждайся скидкой 2000р</p>
+            <p>на первую покупку!</p>
           </div>
           <div className='btnContainer'>
           <LinkContainer to="/signup">

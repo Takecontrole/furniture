@@ -40,7 +40,7 @@ function CheckoutForm() {
                 if (!isLoading && !isError) {
                     setAlertMessage(`Payment ${paymentIntent.status}`);
                     setTimeout(() => {
-                        // navigate("/orders");
+                         navigate("/orders");
                     }, 3000);
                 }
             });

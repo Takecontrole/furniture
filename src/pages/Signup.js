@@ -18,7 +18,7 @@ function Signup() {
     return (
         <Container>
             <Row>
-                <Col md={6} className="signup__form--container">
+                <Col md={12} className="signup__form--container">
                     <Form style={{ width: "100%" }} onSubmit={handleSignup}>
                         <h1>Создать аккаунт</h1>
                         {isError && <Alert variant="danger">{error.data}</Alert>}
@@ -47,8 +47,7 @@ function Signup() {
                         </p>
                     </Form>
                 </Col>
-                <Col md={6} className="signup__image--container"></Col>
-            </Row>
+                 </Row>
         </Container>
     );
 }

@@ -3,9 +3,12 @@ import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation";
+
+
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Consultation from "./pages/Consultation";
 import { useDispatch, useSelector } from "react-redux";
 import NewProduct from "./pages/NewProduct";
 import ProductPage from "./pages/ProductPage";
@@ -17,6 +20,8 @@ import CartPage from "./pages/CartPage";
 import OrdersPage from "./pages/OrdersPage";
 import AdminDashboard from "./pages/AdminDashboard";
 import EditProductPage from "./pages/EditProductPage";
+
+import Animation from "./pages/Animation";
 import Announcement from "./components/Announcement";
 import { useEffect } from "react";
 import { io } from "socket.io-client";
@@ -26,6 +31,7 @@ import { addNotification } from "./features/userSlice";
 function App() {
   const user = useSelector((state) => state.user);
     const dispatch = useDispatch();
+    
     useEffect(() => {
         const socket = io("ws://localhost:8080");
         socket.off("notification").on("notification", (msgObj, user_id) => {
@@ -46,19 +52,22 @@ function App() {
             <HashRouter>
                 <ScrollToTop />
                 <Announcement/>
+               
+               
                 <Navigation />
                 <Routes>
                     <Route index element={<Home />} />
-                    {!user && (
-                        <>
+
                             <Route path="/login" element={<Login />} />
                             <Route path="/signup" element={<Signup />} />
-                        </>
-                    )}
+                            <Route path="/consultation" element={<Consultation />} />
+
+                    
                      {user && user.isAdmin && (
                         <>
                             <Route path="/admin" element={<AdminDashboard />} />
                             <Route path="/product/:id/edit" element={<EditProductPage />} />
+                    <Route path="/new-product" element={<NewProduct />} />
                         </>
                     )}
                     {user && (
@@ -71,13 +80,15 @@ function App() {
                   <Route path="/category/:category" element={<CategoryPage />} />
                   <Route path="/collect/:collect" element={<CollectPage />} />
                   <Route path="/part/:part" element={<PartPage />} />
+                  <Route path="/about" element={<Animation />} />
                  
-                    <Route path="/new-product" element={<NewProduct />} />
 
 
                   
                 </Routes>
+                
             </HashRouter>
+            
         </div>
     );
 }
