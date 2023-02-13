@@ -74,12 +74,12 @@ function PartPage() {
              <div className="options">
              {lounge.map((lounge) => (
                         <LinkContainer to={`/category/${lounge.name.toLocaleLowerCase()}`}>
-             <div className="category">
              <Slide bottom>
+             <div className="category">
              <img src={lounge.img} className="category-image"/>
              <h5 className="text-center">{lounge.name}</h5>
-                        </Slide>
              </div>
+                        </Slide>
              </LinkContainer>
                         ))}
             </div>

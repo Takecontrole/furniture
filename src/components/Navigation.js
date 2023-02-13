@@ -100,11 +100,15 @@ function Navigation() {
                          <NavDropdown title="Гостиная" id="basic-nav-dropdown">
                          
                        <LinkContainer to="/part/гостиная">
-                          <NavDropdown.Item>Увидеть всё</NavDropdown.Item>
+                          <NavDropdown.Item><p className="show-image">Посмотреть всё
+                       <div className="image-box">
+                        <img className="cat-img" src="../images/part/гостиная.png"/> 
+                        </div>
+                        </p></NavDropdown.Item>
                          </LinkContainer>
                          
                        <LinkContainer to="/category/диваны для гостиной">
-                          <NavDropdown.Item><p className="testnavbar">Диваны
+                          <NavDropdown.Item><p className="show-image">Диваны
                        <div className="image-box">
                         <img className="cat-img" src="../images/category/диваны для гостиной.png"/> 
                         </div>
@@ -113,38 +117,70 @@ function Navigation() {
                          </LinkContainer>
                          
                          <LinkContainer to="/category/столы для гостиной">
-                          <NavDropdown.Item>Столики</NavDropdown.Item>
+                          <NavDropdown.Item><p className="show-image">Столики
+                       <div className="image-box">
+                        <img className="cat-img" src="../images/category/столы для гостиной.png"/> 
+                        </div>
+                        </p></NavDropdown.Item>
                          </LinkContainer>
                          
                          <LinkContainer to="/category/кресла для гостиной">
-                          <NavDropdown.Item>Кресла</NavDropdown.Item>
+                          <NavDropdown.Item><p className="show-image">Кресла
+                       <div className="image-box">
+                        <img className="cat-img" src="../images/category/кресла для гостиной.png"/> 
+                        </div>
+                        </p></NavDropdown.Item>
                          </LinkContainer>
                          
                          <LinkContainer to="/category/пуфы">
-                          <NavDropdown.Item >Пуфы</NavDropdown.Item>
+                          <NavDropdown.Item ><p className="show-image">Пуфы
+                       <div className="image-box">
+                        <img className="cat-img" src="../images/category/пуфы.png"/> 
+                        </div>
+                        </p></NavDropdown.Item>
                          </LinkContainer>
                          
                        </NavDropdown>
                          <NavDropdown title="Кухня" id="basic-nav-dropdown">
                          
                        <LinkContainer to="/part/кухня">
-                          <NavDropdown.Item>Увидеть весь раздел</NavDropdown.Item>
+                          <NavDropdown.Item ><p className="show-image">Посмотреть всё
+                       <div className="image-box">
+                        <img className="cat-img" src="../images/part/кухня.png"/> 
+                        </div>
+                        </p></NavDropdown.Item>
                          </LinkContainer>
                          
                        <LinkContainer to="/category/кухонные столы">
-                          <NavDropdown.Item>Кухонные столы</NavDropdown.Item>
+                          <NavDropdown.Item><p className="show-image">Кухонные столы
+                       <div className="image-box">
+                        <img className="cat-img" src="../images/category/кухонные столы.png"/> 
+                        </div>
+                        </p></NavDropdown.Item>
                          </LinkContainer>
                          
                          <LinkContainer to="/category/кухонные кресла">
-                          <NavDropdown.Item>Кухонные кресла</NavDropdown.Item>
+                          <NavDropdown.Item><p className="show-image">Кухонные кресла
+                       <div className="image-box">
+                        <img className="cat-img" src="../images/category/кухонные кресла.png"/> 
+                        </div>
+                        </p></NavDropdown.Item>
                          </LinkContainer>
                          
                          <LinkContainer to="/category/барные стулья">
-                          <NavDropdown.Item>Барные стулья</NavDropdown.Item>
+                          <NavDropdown.Item><p className="show-image">Барные стулья
+                       <div className="image-box">
+                        <img className="cat-img" src="../images/category/барные стулья.png"/> 
+                        </div>
+                        </p></NavDropdown.Item>
                          </LinkContainer>
                          
                          <LinkContainer to="/category/украшения">
-                          <NavDropdown.Item >Украшения</NavDropdown.Item>
+                          <NavDropdown.Item ><p className="show-image">Украшения
+                       <div className="image-box">
+                        <img className="cat-img" src="../images/category/украшения.png"/> 
+                        </div>
+                        </p></NavDropdown.Item>
                          </LinkContainer>
                          
                        </NavDropdown>
@@ -153,27 +189,51 @@ function Navigation() {
                          <NavDropdown title="Декор" id="basic-nav-dropdown">
                          
                        <LinkContainer to="/part/декор">
-                          <NavDropdown.Item>Увидеть весь раздел</NavDropdown.Item>
+                          <NavDropdown.Item><p className="show-image">Увидеть весь раздел
+                       <div className="image-box">
+                        <img className="cat-img" src="../images/part/декор.png"/> 
+                        </div>
+                        </p></NavDropdown.Item>
                          </LinkContainer>
                          
                        <LinkContainer to="/category/домашний декор">
-                          <NavDropdown.Item>Домашний декор</NavDropdown.Item>
+                          <NavDropdown.Item><p className="show-image">Домашний декор
+                       <div className="image-box">
+                        <img className="cat-img" src="../images/category/домашний декор.png"/> 
+                        </div>
+                        </p></NavDropdown.Item>
                          </LinkContainer>
                          
                          <LinkContainer to="/category/подушки & покрывала">
-                          <NavDropdown.Item>Подушки & покрывала</NavDropdown.Item>
+                          <NavDropdown.Item><p className="show-image">Подушки & покрывала
+                       <div className="image-box">
+                        <img className="cat-img" src="../images/category/подушки & покрывала.png"/> 
+                        </div>
+                        </p></NavDropdown.Item>
                          </LinkContainer>
                          
                          <LinkContainer to="/category/коврики">
-                          <NavDropdown.Item>коврики</NavDropdown.Item>
+                          <NavDropdown.Item><p className="show-image">Коврики
+                       <div className="image-box">
+                        <img className="cat-img" src="../images/category/коврики.png"/> 
+                        </div>
+                        </p></NavDropdown.Item>
                          </LinkContainer>
                          
                          <LinkContainer to="/category/освещение">
-                          <NavDropdown.Item >Освещение</NavDropdown.Item>
+                          <NavDropdown.Item ><p className="show-image">Освещение
+                       <div className="image-box">
+                        <img className="cat-img" src="../images/category/освещение.png"/> 
+                        </div>
+                        </p></NavDropdown.Item>
                          </LinkContainer>
                          
                          <LinkContainer to="/category/зеркала">
-                          <NavDropdown.Item >Зеркала</NavDropdown.Item>
+                          <NavDropdown.Item ><p className="show-image">Зеркала
+                       <div className="image-box">
+                        <img className="cat-img" src="../images/category/зеркала.png"/> 
+                        </div>
+                        </p></NavDropdown.Item>
                          </LinkContainer>
                          
                        </NavDropdown>
@@ -181,15 +241,27 @@ function Navigation() {
                          <NavDropdown title="Столовая на свежем воздухе" id="basic-nav-dropdown">
                          
                        <LinkContainer to="/part/столовая на свежем воздухе">
-                          <NavDropdown.Item>Увидеть весь раздел</NavDropdown.Item>
+                          <NavDropdown.Item><p className="show-image">Столовая на свежем воздухе
+                       <div className="image-box">
+                        <img className="cat-img" src="../images/part/столовая на свежем воздухе.png"/> 
+                        </div>
+                        </p></NavDropdown.Item>
                          </LinkContainer>
                          
                        <LinkContainer to="/category/столы для дворика">
-                          <NavDropdown.Item>Столы для дворика</NavDropdown.Item>
+                          <NavDropdown.Item><p className="show-image">Столы для дворика
+                       <div className="image-box">
+                        <img className="cat-img" src="../images/category/столы для дворика.png"/> 
+                        </div>
+                        </p></NavDropdown.Item>
                          </LinkContainer>
                          
                          <LinkContainer to="/category/кресла для дворика">
-                          <NavDropdown.Item>Кресла для дворика</NavDropdown.Item>
+                          <NavDropdown.Item><p className="show-image">Кресла для дворика
+                       <div className="image-box">
+                        <img className="cat-img" src="../images/category/кресла для дворика.png"/> 
+                        </div>
+                        </p></NavDropdown.Item>
                          </LinkContainer>
                          
 
@@ -198,32 +270,60 @@ function Navigation() {
                          <NavDropdown title="Мебель для отдыха" id="basic-nav-dropdown">
                          
                            <LinkContainer to="/part/мебель для отдыха">
-                          <NavDropdown.Item>Увидеть весь раздел</NavDropdown.Item>
+                          <NavDropdown.Item><p className="show-image">Мебель для отдыха
+                       <div className="image-box">
+                        <img className="cat-img" src="../images/part/мебель для отдыха.png"/> 
+                        </div>
+                        </p></NavDropdown.Item>
                           </LinkContainer>
                        <LinkContainer to="/category/сидения для отдыха">
-                          <NavDropdown.Item>сидения для отдыха</NavDropdown.Item>
+                          <NavDropdown.Item><p className="show-image">Сидения для отдыха
+                       <div className="image-box">
+                        <img className="cat-img" src="../images/category/сидения для отдыха.png"/> 
+                        </div>
+                        </p></NavDropdown.Item>
                          </LinkContainer>
                        </NavDropdown>
 
                     
                            <NavDropdown title="Аксессуары для дворика" id="basic-nav-dropdown">
                              <LinkContainer to="/part/аксессуары для дворика">
-                          <NavDropdown.Item>Увидеть весь раздел</NavDropdown.Item>
+                          <NavDropdown.Item><p className="show-image">аксессуары для дворика
+                       <div className="image-box">
+                        <img className="cat-img" src="../images/part/аксессуары для дворика.png"/> 
+                        </div>
+                        </p></NavDropdown.Item>
                           </LinkContainer>
                          <LinkContainer to="/category/костровые ямы">
-                          <NavDropdown.Item>Костровые ямы</NavDropdown.Item>
+                          <NavDropdown.Item><p className="show-image">Костровые ямы
+                       <div className="image-box">
+                        <img className="cat-img" src="../images/category/костровые ямы.png"/> 
+                        </div>
+                        </p></NavDropdown.Item>
                          </LinkContainer>
                          
                          <LinkContainer to="/category/лампы & фонари">
-                          <NavDropdown.Item>Лампы & фонари</NavDropdown.Item>
+                          <NavDropdown.Item><p className="show-image">Лампы & фонари
+                       <div className="image-box">
+                        <img className="cat-img" src="../images/category/лампы & фонари.png"/> 
+                        </div>
+                        </p></NavDropdown.Item>
                          </LinkContainer>
                          
                          <LinkContainer to="/category/половики">
-                          <NavDropdown.Item >Половики</NavDropdown.Item>
+                          <NavDropdown.Item ><p className="show-image">Половики
+                       <div className="image-box">
+                        <img className="cat-img" src="../images/category/половики.png"/> 
+                        </div>
+                        </p></NavDropdown.Item>
                          </LinkContainer>
                          
                          <LinkContainer to="/category/горшки">
-                          <NavDropdown.Item >Горшки</NavDropdown.Item>
+                          <NavDropdown.Item ><p className="show-image">Горшки
+                       <div className="image-box">
+                        <img className="cat-img" src="../images/category/горшки.png"/> 
+                        </div>
+                        </p></NavDropdown.Item>
                          </LinkContainer>
                          
                        </NavDropdown>                       

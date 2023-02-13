@@ -1,20 +1,20 @@
 import React, { useState } from 'react'; 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import "./Footer.css"
+import "./Tabs.css"
  const Footer = () => { 
 
 return (
-  <Tabs style={{marginTop:"50px",backgroundImage: "linear-gradient(135deg, #536976 40%, #292E49)"}}>
-    <TabList style={{color:"white",backgroundImage: "linear-gradient(135deg, #536976 40%, #292E49)"}}>
-      <Tab>Адрес и контакты</Tab>
-      <Tab >Присоединяйся к нам</Tab>
-      <Tab >О нас</Tab>
-      <Tab >Наш сервис</Tab>
-    </TabList>
-
-    <TabPanel style={{backgroundImage: "linear-gradient(135deg, #536976 40%, #292E49)"}}>
-       <div class="center box">
+  <div className="Foot">
+   <ul>
+        
+        <li>
+          <label for="btn-1" class="opencontent">Наш адрес и контакты <i class="fa fa-angle-down"></i></label>
+          <a class="show-content"style={{color:"white"}}>Наш адрес и контакты <i class="fa fa-angle-down" ></i></a>
+          <input style={{display:"none"}}type="checkbox" id="btn-1"/>
+          <ul>
+            <li>
+            <div class="center box">
           
           <div style={{color:"white"}}class="footer-content">
             <div class="place">
@@ -31,14 +31,25 @@ return (
             </div>
           </div>
         </div>
-    </TabPanel>
-    <TabPanel style={{}}>
-       <div class="right box">
+            </li>
+           
+          </ul>
+        </li>
+        
+        
+        <li>
+          <label for="btn-2" class="opencontent">Присоединяйся к нам  <i class="fa fa-angle-down"></i></label>
+          <a style={{color:"white"}}>Присоединяйся к нам  <i class="fa fa-angle-down"></i></a>
+          
+          <input style={{display:"none"}} type="checkbox" id="btn-2"/>
+          <ul className="second-ul">
+            <li>
+            <div class="right box">
           <div class="footer-content">
             <form action="#">
               <div class="email">
                 <p style={{color:"white",margin: "30px"}}>Подпишись на уведомления и будь в курсе наших последних новостей и акций!</p>
-                <input style={{width:"250px", border:"none",borderBottom:"2px solid white", backgroundColor:"transparent", outline:"none"}} placeholder="Введите Ваш Email"type="email" required/>
+                <input style={{width:"250px", border:"none",borderBottom:"2px solid white", backgroundColor:"black"}} placeholder="Введите Ваш Email"type="email" required/>
               </div>
              
               <div class="btn">
@@ -46,22 +57,22 @@ return (
               </div>
             </form>
           </div>
-           <div style={{}}class="social">
+           <div style={{color:"white"}}class="social">
               <a ><span class="fab fa-facebook-f"></span></a>
               <a> <span class="fab fa-twitter"></span></a>
               <a> <span class="fab fa-instagram"></span></a>
               <a ><span class="fab fa-youtube"></span></a>
             </div>
         </div>
-    </TabPanel>
-    <TabPanel>
-    <h1>Нашу историю вы можете прочесть здесь</h1>
-    </TabPanel>
-    <TabPanel>
-    <h1>Нашу историю вы можете прочесть здесь</h1>
-    </TabPanel>
-  </Tabs>
-  
+            </li>
+           
+            
+          </ul>
+        </li>
+        <li><a href="/#/about">О нас</a></li>
+        <li><a href="#">Наш сервис</a></li>
+      </ul>
+  </div>
      ); 
  } 
   

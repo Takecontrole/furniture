@@ -4,7 +4,7 @@ import Icons from "../components/Icons";
 
 function Animation () {
   
-  const ZoomInScrollOut = batch(Sticky(), FadeIn(), ZoomIn());
+  const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
   const FadeUp = batch(Fade(), Sticky());
   return (
     
@@ -12,7 +12,13 @@ function Animation () {
                  <ScrollContainer>
         <ScrollPage >
         <Animator animation={batch(Fade())}>
-            <Icons />
+              <div className="cat-page-container">
+        <div className="header">
+       
+            <img src="../images/spacejoy-XpbtQfr9Skg-unsplash.jpg" className="images"/>
+                <h1 className="text">С 1997 года.</h1>
+          </div>
+            </div>
             </Animator >
           </ScrollPage >
      
@@ -29,17 +35,18 @@ function Animation () {
           
             
       <h2 >
-        <Animator animation={Move()}>Создайте теплое и комфортное пространство</Animator>
-        <Animator animation={Move()}>для своей семьи и друзей</Animator>
+        <Animator animation={Move()}>Мы помогаем создать теплое и комфортное пространство</Animator>
+        <Animator animation={Move()}>для Вас, Вашей семьи и друзей!</Animator>
         
-        <Animator style={{color:"transparent"}} animation={ MoveOut(-1000, 0)}>" "</Animator>
+        <Animator animation={ Move()}>В нашем производстве мебель</Animator>
         
-        <Animator style={{color:"transparent"}} animation={ MoveOut(-1000, 0)}>"  "</Animator>
-        <Animator animation={MoveOut(1000, 0)}>Для гостинной</Animator>
-        <Animator animation={MoveOut(-1000, 0)}>Для кухни</Animator>
         
-        <Animator animation={MoveOut(1000, 0)}>Для активного отдыха</Animator>
-        <Animator animation={MoveOut(-1000, 0)}>Для дворика и огорода</Animator>
+        <Animator animation={MoveOut(1000, 0)}>для гостинной</Animator>
+        <Animator animation={MoveOut(-1000, 0)}>для кухни</Animator>
+        
+        <Animator animation={MoveOut(1000, 0)}>для активного отдыха</Animator>
+        <Animator animation={MoveOut(-1000, 0)}>для дворика и огорода</Animator>
+        <Animator animation={MoveOut(1000, 0)}>И многое другое</Animator>
       </h2>
     
           </Animator >
@@ -49,8 +56,8 @@ function Animation () {
   
     <ScrollPage >
     <Animator animation={batch(Fade(), Sticky())}>
-      <span style={{ fontSize: "26px" }}>
-        Вот некоторые товары, которые мы рекомендуем на этой неделе.
+      <span style={{ fontSize: "20px" }}>
+        На протяжении более 20 лет бренд NiceHouse символизирует качество, ценность и целостность. Каждый день мы стремимся превзойти ожидания наших клиентов за счет непревзойденного обслуживания, продуманного дизайна продукта и превосходной производительности. Наш успех основан на вашем удовлетворении.
       </span>
     </Animator>
   </ScrollPage>
