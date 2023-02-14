@@ -9,8 +9,8 @@ return (
    <ul>
         
         <li>
-          <label for="btn-1" class="opencontent">Наш адрес и контакты <i class="fa fa-angle-down"></i></label>
-          <a class="show-content"style={{color:"white"}}>Наш адрес и контакты <i class="fa fa-angle-down" ></i></a>
+          <label style={{color:"white"}} for="btn-1" class="opencontent">Наш адрес и контакты <i class="fa fa-angle-down"></i></label>
+        
           <input style={{display:"none"}}type="checkbox" id="btn-1"/>
           <ul>
             <li>
@@ -38,11 +38,11 @@ return (
         
         
         <li>
-          <label for="btn-2" class="opencontent">Присоединяйся к нам  <i class="fa fa-angle-down"></i></label>
-          <a style={{color:"white"}}>Присоединяйся к нам  <i class="fa fa-angle-down"></i></a>
+          <label style={{color:"white"}} for="btn-2" class="opencontent">Присоединяйся к нам  <i class="fa fa-angle-down"></i></label>
+          
           
           <input style={{display:"none"}} type="checkbox" id="btn-2"/>
-          <ul className="second-ul">
+          <ul style={{marginTop:"40px"}} >
             <li>
             <div class="right box">
           <div class="footer-content">
@@ -70,7 +70,7 @@ return (
           </ul>
         </li>
         <li><a href="/#/about">О нас</a></li>
-        <li><a href="#">Наш сервис</a></li>
+        <li><a  href="#">Наш сервис</a></li>
       </ul>
   </div>
      ); 

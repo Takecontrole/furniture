@@ -18,7 +18,7 @@ const Icons = () => {
 </path>
 </svg>
 </div>
-<Slide bottom delay={1000}>
+<Slide left delay={1000}>
 <p>Доставка домой & самовызов</p>
 </Slide>
 </div>
@@ -27,7 +27,7 @@ const Icons = () => {
  <div className="symbols">
  <img style={{paddingLeft:"20px", paddingTop:"20px",width:"100%", height:"100%"}} src="https://img.freepik.com/premium-vector/industrial-robotic-arm-icon-black-mechanical-manipulator_53562-15876.jpg"/>
  </div>
-<Slide left delay={1000}>
+<Slide bottom delay={1000}>
 <p>Высокоточное изготовление</p>
 </Slide>
 </div>

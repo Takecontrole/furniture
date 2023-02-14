@@ -6,12 +6,16 @@
   display: flex;
   justify-content: center;
 }
+
+.mobile-button{
+  display: none ;
+}
 .Foot:after{
   content: '';
   clear: both;
   display: table;
 }
-ul{
+.Foot ul{
   left: 0px;
   right: 0px;
   width: 100%;
@@ -20,20 +24,34 @@ ul{
   position: relative;
   -ms-user-select: none; 
   user-select: none; 
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 .Foot ul li{
-  float: left;
-  display: inline-block;
+
   background: black;
-  margin: 0 5px;
+  margin:  5px;
   
+}
+
+  .opencontent{
+  
+  font-size: 18px;
+  padding: 0px 15px;
+  }
+  .opencontent:hover{
+  color: #f12020;
+  border-radius: 5px;
+  box-shadow:  0 0 5px #f12020,
+               0 0 10px #f12020;
 }
 .Foot ul li a{
   color: white;
-  line-height: 70px;
+  
   text-decoration: none;
   font-size: 18px;
-  padding: 8px 15px;
+  padding: 3px 15px;
 }
 .Foot ul li a:hover{
   color: #f12020;
@@ -83,10 +101,11 @@ ul{
 }
 .fa-angle-down{
   font-size: 15px;
-  margin-left: 40px;
+  margin-left: 10px;
 }
 
-@media all and (max-width: 480px) {
+
+@media all and (max-width: 920px) {
 .Foot ul{
    width:"100%";
     
@@ -99,23 +118,27 @@ ul{
     
     width: 100%;
   }
-  .opencontent {
-    display:none;
-  }
-  .show-content{
-    display: none;
-  }
   
+ 
+    .opencontent{
+  
+  font-size: 18px;
+  padding: 20px 15px;
+  }
+  .opencontent:hover{
+  
+  box-shadow: none;
+}
 .Foot ul li,.Foot ul ul li{
   
-    width: 85%;
+    width: 100%;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
   }
   .Foot ul ul li{
-    width: 90%;
+    width: 100%;
   }
-  .opencontent{
+  .mobile-button{
     display: block;
     color: white;
     font-size: 18px;
@@ -123,7 +146,7 @@ ul{
     line-height: 70px;
     cursor: pointer;
   }
-  
+
   .icon{
     display: block;
     color: white;
@@ -144,9 +167,7 @@ ul{
     visibility: visible;
   }
   
-  .second-ul {
-    margin-top: 70px;
-  }
+  
   
 .Foot ul ul ul li{
     
@@ -158,8 +179,21 @@ ul{
     border-bottom: 1px solid gray;
     border-top: none;
   }
+  .Foot ul li a{
+    
+  font-size: 22px;
+}
+  
+  .Foot ul li{
+
+  background: black;
+  margin:  0px;
+ 
   
 }
+
+}
+
 
 .center .footer-content .fas{
 
