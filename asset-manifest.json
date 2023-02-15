@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/furniture/static/css/main.26db8cf9.css",
-    "main.js": "/furniture/static/js/main.aa2eee7e.js",
+    "main.css": "/furniture/static/css/main.433df2ff.css",
+    "main.js": "/furniture/static/js/main.893bce24.js",
     "static/js/787.ec704a7a.chunk.js": "/furniture/static/js/787.ec704a7a.chunk.js",
-    "static/media/video1.mp4": "/furniture/static/media/video1.90f140ca8a3465ff1a85.mp4",
+    "static/media/video1.mp4": "/furniture/static/media/video1.5d87b6f8420deaa41b6a.mp4",
     "static/media/video2.mp4": "/furniture/static/media/video2.5e86452c62ceaba8c016.mp4",
-    "static/media/PlayfairDisplay-MediumItalic.ttf": "/furniture/static/media/PlayfairDisplay-MediumItalic.69c89309175b14e01cc3.ttf",
+    "static/media/Raleway-Light.ttf": "/furniture/static/media/Raleway-Light.58bcdae09d89ccd8d086.ttf",
     "static/media/logo.svg": "/furniture/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/furniture/index.html",
-    "main.26db8cf9.css.map": "/furniture/static/css/main.26db8cf9.css.map",
-    "main.aa2eee7e.js.map": "/furniture/static/js/main.aa2eee7e.js.map",
+    "main.433df2ff.css.map": "/furniture/static/css/main.433df2ff.css.map",
+    "main.893bce24.js.map": "/furniture/static/js/main.893bce24.js.map",
     "787.ec704a7a.chunk.js.map": "/furniture/static/js/787.ec704a7a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.26db8cf9.css",
-    "static/js/main.aa2eee7e.js"
+    "static/css/main.433df2ff.css",
+    "static/js/main.893bce24.js"
   ]
 }
