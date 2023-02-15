@@ -1,26 +1,26 @@
 const decor = [
     {
         name: "Домашний декор",
-        img: "../images/category/домашний декор.png"
+        img: "./images/category/домашний декор.png"
         
         
     },
     {
         name: "Подушки & покрывала",
-        img: "../images/category/подушки & покрывала.png"
+        img: "./images/category/подушки & покрывала.png"
     },
 
     { 
       name: "Коврики", 
-      img: "../images/category/коврики.png"
+      img: "./images/category/коврики.png"
     },
     { 
       name: "Освещение", 
-      img: "../images/category/освещение.png"
+      img: "./images/category/освещение.png"
     },
     { 
       name: "Зеркала", 
-      img: "../images/category/зеркала.png"
+      img: "./images/category/зеркала.png"
     },
     
 ];

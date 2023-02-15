@@ -57,7 +57,7 @@ function CollectPage() {
       <Pulse duration={2000} delay={1000}>
         <div className="cat-page-container">
         <div className="header">
-            <img src="../images/category/ignacio-r-cd8wgINZPYc-unsplash.jpg" className="images"/>
+            <img src="./images/category/ignacio-r-cd8wgINZPYc-unsplash.jpg" className="images"/>
                 <h1 className="text">{collect.charAt(0).toUpperCase() + collect.slice(1)}</h1>
 
             </div>

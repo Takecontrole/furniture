@@ -63,7 +63,7 @@ function PartPage() {
       <Pulse duration={2000} delay={1000}>
         <div className="category-page-container">
             <div className="headder">
-            <img src={`../images/part/${part}.png`} className="image"/>
+            <img src={`./images/part/${part}.png`} className="image"/>
                 <h1 className="text-center">{part.charAt(0).toUpperCase() + part.slice(1)}</h1>
             </div>
             </div>

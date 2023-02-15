@@ -57,7 +57,7 @@ function CategoryPage() {
         <div className="cat-page-container">
         <div className="header">
        
-            <img src={`../images/category/${category}.png`} className="images"/>
+            <img src={`./images/category/${category}.png`} className="images"/>
                 <h1 className="text">{category.charAt(0).toUpperCase() + category.slice(1)}</h1>
           </div>
             </div>
