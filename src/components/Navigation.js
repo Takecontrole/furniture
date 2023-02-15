@@ -102,7 +102,7 @@ function Navigation() {
                        <LinkContainer to="/part/гостиная">
                           <NavDropdown.Item><p className="show-image">Посмотреть всё
                        <div className="image-box">
-                        <img className="cat-img" src="../images/part/гостиная.png"/> 
+                        <img className="cat-img" src="./images/part/гостиная.png"/> 
                         </div>
                         </p></NavDropdown.Item>
                          </LinkContainer>
@@ -110,7 +110,7 @@ function Navigation() {
                        <LinkContainer to="/category/диваны для гостиной">
                           <NavDropdown.Item><p className="show-image">Диваны
                        <div className="image-box">
-                        <img className="cat-img" src="../images/category/диваны для гостиной.png"/> 
+                        <img className="cat-img" src="./images/category/диваны для гостиной.png"/> 
                         </div>
                         </p>
                           </NavDropdown.Item>
@@ -119,7 +119,7 @@ function Navigation() {
                          <LinkContainer to="/category/столы для гостиной">
                           <NavDropdown.Item><p className="show-image">Столики
                        <div className="image-box">
-                        <img className="cat-img" src="../images/category/столы для гостиной.png"/> 
+                        <img className="cat-img" src="./images/category/столы для гостиной.png"/> 
                         </div>
                         </p></NavDropdown.Item>
                          </LinkContainer>
@@ -127,7 +127,7 @@ function Navigation() {
                          <LinkContainer to="/category/кресла для гостиной">
                           <NavDropdown.Item><p className="show-image">Кресла
                        <div className="image-box">
-                        <img className="cat-img" src="../images/category/кресла для гостиной.png"/> 
+                        <img className="cat-img" src="./images/category/кресла для гостиной.png"/> 
                         </div>
                         </p></NavDropdown.Item>
                          </LinkContainer>
@@ -135,7 +135,7 @@ function Navigation() {
                          <LinkContainer to="/category/пуфы">
                           <NavDropdown.Item ><p className="show-image">Пуфы
                        <div className="image-box">
-                        <img className="cat-img" src="../images/category/пуфы.png"/> 
+                        <img className="cat-img" src="./images/category/пуфы.png"/> 
                         </div>
                         </p></NavDropdown.Item>
                          </LinkContainer>
@@ -146,7 +146,7 @@ function Navigation() {
                        <LinkContainer to="/part/кухня">
                           <NavDropdown.Item ><p className="show-image">Посмотреть всё
                        <div className="image-box">
-                        <img className="cat-img" src="../images/part/кухня.png"/> 
+                        <img className="cat-img" src="./images/part/кухня.png"/> 
                         </div>
                         </p></NavDropdown.Item>
                          </LinkContainer>
@@ -154,7 +154,7 @@ function Navigation() {
                        <LinkContainer to="/category/кухонные столы">
                           <NavDropdown.Item><p className="show-image">Кухонные столы
                        <div className="image-box">
-                        <img className="cat-img" src="../images/category/кухонные столы.png"/> 
+                        <img className="cat-img" src="./images/category/кухонные столы.png"/> 
                         </div>
                         </p></NavDropdown.Item>
                          </LinkContainer>
@@ -162,7 +162,7 @@ function Navigation() {
                          <LinkContainer to="/category/кухонные кресла">
                           <NavDropdown.Item><p className="show-image">Кухонные кресла
                        <div className="image-box">
-                        <img className="cat-img" src="../images/category/кухонные кресла.png"/> 
+                        <img className="cat-img" src="./images/category/кухонные кресла.png"/> 
                         </div>
                         </p></NavDropdown.Item>
                          </LinkContainer>
@@ -170,7 +170,7 @@ function Navigation() {
                          <LinkContainer to="/category/барные стулья">
                           <NavDropdown.Item><p className="show-image">Барные стулья
                        <div className="image-box">
-                        <img className="cat-img" src="../images/category/барные стулья.png"/> 
+                        <img className="cat-img" src="./images/category/барные стулья.png"/> 
                         </div>
                         </p></NavDropdown.Item>
                          </LinkContainer>
@@ -178,7 +178,7 @@ function Navigation() {
                          <LinkContainer to="/category/украшения">
                           <NavDropdown.Item ><p className="show-image">Украшения
                        <div className="image-box">
-                        <img className="cat-img" src="../images/category/украшения.png"/> 
+                        <img className="cat-img" src="./images/category/украшения.png"/> 
                         </div>
                         </p></NavDropdown.Item>
                          </LinkContainer>
@@ -191,7 +191,7 @@ function Navigation() {
                        <LinkContainer to="/part/декор">
                           <NavDropdown.Item><p className="show-image">Увидеть весь раздел
                        <div className="image-box">
-                        <img className="cat-img" src="../images/part/декор.png"/> 
+                        <img className="cat-img" src="./images/part/декор.png"/> 
                         </div>
                         </p></NavDropdown.Item>
                          </LinkContainer>
@@ -199,7 +199,7 @@ function Navigation() {
                        <LinkContainer to="/category/домашний декор">
                           <NavDropdown.Item><p className="show-image">Домашний декор
                        <div className="image-box">
-                        <img className="cat-img" src="../images/category/домашний декор.png"/> 
+                        <img className="cat-img" src="./images/category/домашний декор.png"/> 
                         </div>
                         </p></NavDropdown.Item>
                          </LinkContainer>
@@ -207,7 +207,7 @@ function Navigation() {
                          <LinkContainer to="/category/подушки & покрывала">
                           <NavDropdown.Item><p className="show-image">Подушки & покрывала
                        <div className="image-box">
-                        <img className="cat-img" src="../images/category/подушки & покрывала.png"/> 
+                        <img className="cat-img" src="./images/category/подушки & покрывала.png"/> 
                         </div>
                         </p></NavDropdown.Item>
                          </LinkContainer>
@@ -215,7 +215,7 @@ function Navigation() {
                          <LinkContainer to="/category/коврики">
                           <NavDropdown.Item><p className="show-image">Коврики
                        <div className="image-box">
-                        <img className="cat-img" src="../images/category/коврики.png"/> 
+                        <img className="cat-img" src="./images/category/коврики.png"/> 
                         </div>
                         </p></NavDropdown.Item>
                          </LinkContainer>
@@ -223,7 +223,7 @@ function Navigation() {
                          <LinkContainer to="/category/освещение">
                           <NavDropdown.Item ><p className="show-image">Освещение
                        <div className="image-box">
-                        <img className="cat-img" src="../images/category/освещение.png"/> 
+                        <img className="cat-img" src="./images/category/освещение.png"/> 
                         </div>
                         </p></NavDropdown.Item>
                          </LinkContainer>
@@ -231,7 +231,7 @@ function Navigation() {
                          <LinkContainer to="/category/зеркала">
                           <NavDropdown.Item ><p className="show-image">Зеркала
                        <div className="image-box">
-                        <img className="cat-img" src="../images/category/зеркала.png"/> 
+                        <img className="cat-img" src="./images/category/зеркала.png"/> 
                         </div>
                         </p></NavDropdown.Item>
                          </LinkContainer>
@@ -243,7 +243,7 @@ function Navigation() {
                        <LinkContainer to="/part/столовая на свежем воздухе">
                           <NavDropdown.Item><p className="show-image">Столовая на свежем воздухе
                        <div className="image-box">
-                        <img className="cat-img" src="../images/part/столовая на свежем воздухе.png"/> 
+                        <img className="cat-img" src="./images/part/столовая на свежем воздухе.png"/> 
                         </div>
                         </p></NavDropdown.Item>
                          </LinkContainer>
@@ -251,7 +251,7 @@ function Navigation() {
                        <LinkContainer to="/category/столы для дворика">
                           <NavDropdown.Item><p className="show-image">Столы для дворика
                        <div className="image-box">
-                        <img className="cat-img" src="../images/category/столы для дворика.png"/> 
+                        <img className="cat-img" src="./images/category/столы для дворика.png"/> 
                         </div>
                         </p></NavDropdown.Item>
                          </LinkContainer>
@@ -259,7 +259,7 @@ function Navigation() {
                          <LinkContainer to="/category/кресла для дворика">
                           <NavDropdown.Item><p className="show-image">Кресла для дворика
                        <div className="image-box">
-                        <img className="cat-img" src="../images/category/кресла для дворика.png"/> 
+                        <img className="cat-img" src="./images/category/кресла для дворика.png"/> 
                         </div>
                         </p></NavDropdown.Item>
                          </LinkContainer>
@@ -272,14 +272,14 @@ function Navigation() {
                            <LinkContainer to="/part/мебель для отдыха">
                           <NavDropdown.Item><p className="show-image">Мебель для отдыха
                        <div className="image-box">
-                        <img className="cat-img" src="../images/part/мебель для отдыха.png"/> 
+                        <img className="cat-img" src="./images/part/мебель для отдыха.png"/> 
                         </div>
                         </p></NavDropdown.Item>
                           </LinkContainer>
                        <LinkContainer to="/category/сидения для отдыха">
                           <NavDropdown.Item><p className="show-image">Сидения для отдыха
                        <div className="image-box">
-                        <img className="cat-img" src="../images/category/сидения для отдыха.png"/> 
+                        <img className="cat-img" src="./images/category/сидения для отдыха.png"/> 
                         </div>
                         </p></NavDropdown.Item>
                          </LinkContainer>
@@ -290,14 +290,14 @@ function Navigation() {
                              <LinkContainer to="/part/аксессуары для дворика">
                           <NavDropdown.Item><p className="show-image">аксессуары для дворика
                        <div className="image-box">
-                        <img className="cat-img" src="../images/part/аксессуары для дворика.png"/> 
+                        <img className="cat-img" src="./images/part/аксессуары для дворика.png"/> 
                         </div>
                         </p></NavDropdown.Item>
                           </LinkContainer>
                          <LinkContainer to="/category/костровые ямы">
                           <NavDropdown.Item><p className="show-image">Костровые ямы
                        <div className="image-box">
-                        <img className="cat-img" src="../images/category/костровые ямы.png"/> 
+                        <img className="cat-img" src="./images/category/костровые ямы.png"/> 
                         </div>
                         </p></NavDropdown.Item>
                          </LinkContainer>
@@ -305,7 +305,7 @@ function Navigation() {
                          <LinkContainer to="/category/лампы & фонари">
                           <NavDropdown.Item><p className="show-image">Лампы & фонари
                        <div className="image-box">
-                        <img className="cat-img" src="../images/category/лампы & фонари.png"/> 
+                        <img className="cat-img" src="./images/category/лампы & фонари.png"/> 
                         </div>
                         </p></NavDropdown.Item>
                          </LinkContainer>
@@ -313,7 +313,7 @@ function Navigation() {
                          <LinkContainer to="/category/половики">
                           <NavDropdown.Item ><p className="show-image">Половики
                        <div className="image-box">
-                        <img className="cat-img" src="../images/category/половики.png"/> 
+                        <img className="cat-img" src="./images/category/половики.png"/> 
                         </div>
                         </p></NavDropdown.Item>
                          </LinkContainer>
@@ -321,7 +321,7 @@ function Navigation() {
                          <LinkContainer to="/category/горшки">
                           <NavDropdown.Item ><p className="show-image">Горшки
                        <div className="image-box">
-                        <img className="cat-img" src="../images/category/горшки.png"/> 
+                        <img className="cat-img" src="./images/category/горшки.png"/> 
                         </div>
                         </p></NavDropdown.Item>
                          </LinkContainer>
