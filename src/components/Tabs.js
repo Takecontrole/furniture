@@ -69,7 +69,7 @@ return (
             
           </ul>
         </li>
-        <li><a href="/#/about">О нас</a></li>
+        <li><a href="/about">О нас</a></li>
         <li><a  href="#">Наш сервис</a></li>
       </ul>
   </div>
