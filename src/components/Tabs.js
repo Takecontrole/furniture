@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import "./Tabs.css"
+import { LinkContainer } from "react-router-bootstrap";
  const Footer = () => { 
 
 return (
@@ -69,7 +70,9 @@ return (
             
           </ul>
         </li>
-        <li><a href="/about">О нас</a></li>
+          <LinkContainer style={{color:"white", fontSize:"18px"}}to="/about">
+        <li>О нас</li>
+          </LinkContainer>
         <li><a  href="#">Наш сервис</a></li>
       </ul>
   </div>

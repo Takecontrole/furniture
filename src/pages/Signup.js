@@ -3,16 +3,22 @@ import { Container, Row, Col, Form, Button, Alert } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./Signup.css";
 import { useSignupMutation } from "../services/appApi";
-
+import { useNavigate } from "react-router-dom";
 function Signup() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [name, setName] = useState("");
     const [signup, { error, isLoading, isError }] = useSignupMutation();
-
+const navigate = useNavigate();
     function handleSignup(e) {
         e.preventDefault();
-        signup({ name, email, password });
+        signup({ name, email, password }).then(() => {
+            if (!isError) {
+                setTimeout(() => {
+                    navigate("/");
+                }, 1500);
+            }
+        });
     }
 
     return (

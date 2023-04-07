@@ -12,7 +12,7 @@ function Login() {
     function handleLogin(e) {
         e.preventDefault();
         login({ email, password }).then(() => {
-            if (isError) {
+            if (!isError) {
                 setTimeout(() => {
                     navigate("/");
                 }, 1500);

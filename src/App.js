@@ -33,7 +33,7 @@ function App() {
     const dispatch = useDispatch();
     
     useEffect(() => {
-        const socket = io("ws://localhost:8080");
+        const socket = io("ws://furniture.adaptable.app");
         socket.off("notification").on("notification", (msgObj, user_id) => {
             // logic for notification
             if (user_id === user._id) {
