@@ -65,7 +65,7 @@ function ProductPage() {
                     <p style={{ textAlign: "justify" }} className="py-3">
                         <strong>Описание:</strong> {product.description}
                     </p>
-                    {user && !user.isAdmin && (
+                   
                         <ButtonGroup style={{ width: "90%" }}>
                             <Form.Select size="lg" style={{ width: "40%", borderRadius: "0" }}>
                                 <option value="1">1</option>
@@ -78,7 +78,7 @@ function ProductPage() {
                                 Добавить в корзину
                             </Button> 
                         </ButtonGroup>
-                    )}
+                    
                     {user && user.isAdmin && (
                         <LinkContainer to={`/product/${product._id}/edit`}>
                             <Button size="lg">Редактировать</Button>

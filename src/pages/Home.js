@@ -40,7 +40,7 @@ const [loading, setLoading] = useState(false)
     
   
   return (
-     <div >
+     <div style={{overflow:"hidden"}} >
     {
      loading ?
      <div className="loader">

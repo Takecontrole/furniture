@@ -1,5 +1,5 @@
 import React, {useState, useEffect } from 'react'
-import videoBg from './videos/video1.mp4'
+import videoBg from './videos/land.mp4'
 import "./video.css"
 
 const Video = () => {

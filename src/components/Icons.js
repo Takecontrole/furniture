@@ -1,5 +1,6 @@
 import React from 'react'
 import "./icons.css"
+import indastrial from "./images/industrial-robotic-arm-icon-black-mechanical-manipulator_53562-15876_edit_10958113314472.png"
 import Slide from 'react-reveal/Slide';
 // <span class="material-symbols-outlined">
 //cottage
@@ -19,13 +20,13 @@ const Icons = () => {
 </svg>
 </div>
 <Slide left delay={1000}>
-<p>Доставка домой & самовызов</p>
+<p>Доставка домой & самовывоз</p>
 </Slide>
 </div>
 
  <div class="textcontainer">
  <div className="symbols">
- <img style={{paddingLeft:"20px", paddingTop:"20px",width:"100%", height:"100%"}} src="https://img.freepik.com/premium-vector/industrial-robotic-arm-icon-black-mechanical-manipulator_53562-15876.jpg"/>
+ <img style={{paddingLeft:"20px", paddingTop:"20px",width:"100%", height:"100%"}} src={indastrial}/>
  </div>
 <Slide bottom delay={1000}>
 <p>Высокоточное изготовление</p>
